@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.executiveBoard, .committee{
+    background-color: #F0F0F0;
+}
+
+.exec, .position{
+    color: #B7C7F2;
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "committees",
+  "info": {
+    "name": "Committees"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "staffName": {
+      "type": "string",
+      "private": true,
+      "required": true
+    },
+    "staffPosition": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
