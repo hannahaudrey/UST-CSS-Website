@@ -3,7 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { List, ListItem, ListItemText } from '@material-ui/core';
+import { Grid, Link } from '@material-ui/core';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import CSSBlack from '../../assets/images/CSSBlack.png';
@@ -35,15 +35,15 @@ class Header extends React.Component {
                         </Typography>
 
                         <Box ml='auto'>
-                            <List style={flexContainer}>
+                            <Grid container display='flex' spacing={4} justify='center'>
                                 {NavbarItems.map((item, index) => {
                                     return (
-                                        <ListItem key={index}>
-                                            <ListItemText href={item.link}>{item.title}</ListItemText>
-                                        </ListItem>
+                                        <Grid item key={index}>
+                                            <Link href={item.link}>{item.title}</Link>
+                                        </Grid>
                                     )
                                 })}
-                            </List>
+                            </Grid>
                         </Box>
 
                     </Toolbar>
